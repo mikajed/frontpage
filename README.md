@@ -1,1 +1,1 @@
-Frontpage für den Browser
+Startpage für den Browser
