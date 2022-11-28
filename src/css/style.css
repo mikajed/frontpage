@@ -11,9 +11,10 @@ body {
     color: #dfdfdf;
     background: url("../images/bg.png") no-repeat center top;
     background-size: cover;
+    font-family: 'Roboto';
 }
 
-.outer {
+.container {
     position: absolute;
     top: 20%;
     display: flex;
@@ -23,7 +24,7 @@ body {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 4rem;
     display: flex;
     justify-content: center;
