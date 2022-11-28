@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     color: #dfdfdf;
-    font-family: 'Barlow', sans-serif;
     background: url("../images/bg.png") no-repeat center top;
 }
 
