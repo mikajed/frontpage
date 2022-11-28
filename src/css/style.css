@@ -10,6 +10,7 @@ body {
     justify-content: center;
     color: #dfdfdf;
     background: url("../images/bg.png") no-repeat center top;
+    background-size: cover;
 }
 
 .outer {
