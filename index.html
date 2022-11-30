@@ -8,6 +8,12 @@
 <body>
     <div class="container">
         <h1>hello Michael!</h1>
+        <span id="date"></span>
+        <script type="text/javascript">
+            let date = new Date().toLocaleString("de-DE");
+            console.log(date);
+            document.getElementById("date").innerHTML = date;
+        </script>         
         <ul class="iconFrame">
             <li class="icon">
                 <a href="https://boards.4channel.org/g/" target="_blank">
@@ -72,6 +78,6 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div>   
 </body>
 </html>

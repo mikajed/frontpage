@@ -29,6 +29,14 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#date {
+    font-weight: 200;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
     margin-bottom: 3rem;
 }
 
