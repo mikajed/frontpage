@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+@media (min-width: 600px) {
+    .iconFrame {
+        width: 89%;
+    }
+}
+
 body {
     background-color: #50818e;
     display: flex;
@@ -49,6 +55,7 @@ h1 {
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
     margin-bottom: 30px;
