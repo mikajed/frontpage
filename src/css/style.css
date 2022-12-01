@@ -26,16 +26,12 @@ body {
 h1 {
     font-weight: 300;
     font-size: 4rem;
-    display: flex;
-    justify-content: center;
     margin-bottom: 1rem;
 }
 
 #date {
     font-weight: 200;
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
     margin-bottom: 3rem;
 }
 
