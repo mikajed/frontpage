@@ -4,33 +4,12 @@
     <meta charset="UTF-8">
     <title>Startpage</title>
     <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <script defer src="./src/js/main.js" charset="utf-8"></script>
 </head>
 <body>
     <div class="container">
-        <h1>hello Michael</h1>
+        <h1>Hello Michael</h1>
         <span id="date"></span>
-        <!-- <script type="text/javascript">
-            let date = new Date().toLocaleString("de-DE");
-            console.log(date);
-            document.getElementById("date").innerHTML = date;
-        </script> 
-        -->  
-
-        <script type="text/javascript">
-            var span = document.getElementById('date');
-
-            function time() {
-                var d = new Date();
-                var s = d.getSeconds();
-                var m = d.getMinutes();
-                var h = d.getHours();
-                span.textContent = 
-                    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-            }
-
-            setInterval(time, 1000);
-        </script>  
-
         <ul class="iconFrame">
             <li class="icon">
                 <a href="https://boards.4channel.org/g/" target="_blank">
