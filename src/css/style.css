@@ -9,8 +9,7 @@ body {
     justify-content: center;
     color: #dfdfdf;
     background-color: #1c93d7;
-    background: url("../images/bg2.jpg") no-repeat;
-    background-size: cover;
+    background: url("../images/bg.jpg");
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,7 +47,7 @@ h1 {
     flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
-    margin-bottom: 30px;
+    margin: 0 10px 30px 10px;
 }
 
 .icon {
@@ -63,7 +62,6 @@ h1 {
 
 /* small link frame */
 .iconFrameSmall {
-    box-shadow: 0 18px 150px -40px #000;
     border-radius: 15px;
     width: auto;
     height: 100%;
@@ -72,9 +70,11 @@ h1 {
     padding: 0.7rem 2rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     list-style-type: none;
+    margin: 0 10px 0 10px;
 }
 
 .iconSmall {
