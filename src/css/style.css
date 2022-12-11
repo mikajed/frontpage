@@ -24,13 +24,13 @@ body {
 
 h1 {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 4vw;
     margin-bottom: 1rem;
 }
 
 #date {
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2vw;
     margin-bottom: 3rem;
 }
 
