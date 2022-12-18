@@ -1,3 +1,3 @@
 Frontpage für den Browser
 
-![Bildschirmfoto vom 2022-12-08 11-30-40](https://user-images.githubusercontent.com/84669111/206424264-31eaec4d-79cd-4a92-a2ad-3e62e6546dcd.png)
+![image](https://user-images.githubusercontent.com/84669111/207805308-3678528a-e69a-4e3c-8997-6fba451c13e7.png)
