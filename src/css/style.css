@@ -54,7 +54,6 @@ h1 {
 }
 
 .icon {
-    color: #fff;
     transition: 0.3s;
 }
 
@@ -65,6 +64,7 @@ h1 {
 
 /* small link frame */
 .iconFrameSmall {
+    box-shadow: 0 18px 150px -20px #000;
     border-radius: 15px;
     width: auto;
     height: 100%;
@@ -81,7 +81,6 @@ h1 {
 }
 
 .iconSmall {
-    color: #fff;
     transition: 0.3s;
 }
 
