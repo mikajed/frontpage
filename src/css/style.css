@@ -1,3 +1,7 @@
+:root {
+    color-scheme: light dark;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +9,13 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  
     color: #dfdfdf;
     background-color: #1c93d7;
     background: url("../images/bg.jpg");
-    font-family: Arial, Helvetica, sans-serif;
-}
+*/
 
 .container {
     display: flex;
