@@ -10,7 +10,7 @@
 
 body {
     background: linear-gradient(#000118, #002C5A);
-    min-height: 100vh;
+    min-height: 90vh;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10rem auto;
+    margin: 5rem auto 5rem auto;
 }
 
 h1 {
