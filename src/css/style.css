@@ -17,9 +17,29 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 10rem auto 5rem auto;
+}
+
+.search {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+input {
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+    border: 2px solid #ffffff40;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    flex: auto;
+}
+
+input:focus {
+    outline: none;
 }
 
 h1 {
@@ -31,7 +51,7 @@ h1 {
 #date {
     font-weight: 200;
     font-size: 2vw;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .iconFrame, .iconFrameSmall {
