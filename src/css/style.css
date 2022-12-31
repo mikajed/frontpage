@@ -60,11 +60,12 @@ h1 {
     width: auto;
     backdrop-filter: blur(15px);
     border: 2px solid #ffffff40;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0 10px 30px 10px;
 }
