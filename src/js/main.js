@@ -1,12 +1,5 @@
-let span = document.getElementById('date');
-
-function time() {
-    let d = new Date();
-    let s = d.getSeconds();
-    let m = d.getMinutes();
-    let h = d.getHours();
-    span.textContent = 
-        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+let myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("date").innerHTML = d.toLocaleTimeString();
 }
-
-setInterval(time, 1000);
