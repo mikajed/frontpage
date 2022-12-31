@@ -1,5 +1,6 @@
-let myVar = setInterval(myTimer, 1000);
+setInterval(myTimer, 1000);
+
 function myTimer() {
-  const d = new Date();
+  const d = new Date();
   document.getElementById("date").innerHTML = d.toLocaleTimeString();
 }
