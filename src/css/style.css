@@ -61,6 +61,7 @@ h1 {
     font-size: 5vw;
     margin-bottom: 1rem;
     font-family: 'Ubuntu Mono';
+    text-shadow: 0px 5px 30px #979797;
 }
 
 #date {
