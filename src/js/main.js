@@ -1,6 +1,13 @@
-setInterval(myTimer);
+const span = document.getElementById("date");
+const date = new Date();
+
+if (span.textContent === "") {
+    span.innerText = date.toLocaleTimeString();
+}
+
+setInterval(myTimer, 1000);
 
 function myTimer() {
-  const d = new Date();
-  document.getElementById("date").innerHTML = d.toLocaleTimeString();
+    const date = new Date();
+    span.innerText = date.toLocaleTimeString();
 }
