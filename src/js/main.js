@@ -1,4 +1,4 @@
-setInterval(myTimer, 1000);
+setInterval(myTimer);
 
 function myTimer() {
   const d = new Date();
