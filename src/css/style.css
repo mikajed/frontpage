@@ -1,6 +1,6 @@
-/* :root {
+:root {
     color-scheme: light dark;
-} */
+}
 /* ubuntu-mono-regular - latin */
 @font-face {
     font-family: 'Ubuntu Mono';
@@ -24,8 +24,7 @@
 }
 
 body {
-    background-color: #242424;
-    color: #fff;
+    font-family: 'Ubuntu Mono';
 }
 
 main {
@@ -39,18 +38,18 @@ main {
     display: flex;
     width: 40%;
     justify-content: center;
+    color: #8f8f8f;
 }
 
 input {
     border-radius: 15px;
     backdrop-filter: blur(15px);
     background: transparent;
-    border: 2px solid #ffffff40;
+    border: 2px solid #8f8f8f;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
     color: #fff;
     flex: auto;
-    font-family: 'Ubuntu Mono';
 }
 
 input:focus {
@@ -62,12 +61,13 @@ h1 {
     margin-bottom: 1rem;
     font-family: 'Ubuntu Mono';
     text-shadow: 0px 5px 30px #979797;
+    color: #8f8f8f;
 }
 
 #date {
     font-size: 2vw;
     margin-bottom: 2rem;
-    font-family: 'Ubuntu Mono';
+    color: #8f8f8f;
 }
 
 .iconFrame, .iconFrameSmall {
@@ -86,9 +86,12 @@ h1 {
     margin: 0 10px 30px 10px;
 }
 
+a {
+    color: #8f8f8f;
+}
+
 .icon {
     transition: 0.3s;
-    color: #fff;
 }
 
 .icon:hover {
