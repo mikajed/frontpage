@@ -52,6 +52,10 @@ input {
     flex: auto;
 }
 
+input[type="text"] {
+    color:#e1814e;
+}
+
 input:focus {
     outline: none;
 }
