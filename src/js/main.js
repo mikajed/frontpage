@@ -21,6 +21,8 @@ if (stunde >= 6 && stunde < 12) {
   document.getElementById("greeting").textContent = "Guten Morgen";
 } else if (stunde >= 12 && stunde < 18) {
   document.getElementById("greeting").textContent = "Guten Tag";
+} else if (stunde >= 18 && stunde < 22) {
+  document.getElementById("greeting").textContent = "Guten Abend"
 } else {
-  document.getElementById("greeting").textContent = "Guten Abend";
+  document.getElementById("greeting").textContent = "Gute Nacht";
 }
