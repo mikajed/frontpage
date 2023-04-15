@@ -26,3 +26,4 @@ if (stunde >= 6 && stunde < 12) {
 } else {
   document.getElementById("greeting").textContent = "Gute Nacht";
 }
+
