@@ -127,3 +127,10 @@ a {
     color: #e1814e;
     transform: rotate(15deg);
 }
+
+@media only screen and (max-width: 480px) {
+    .icon {
+        width: 256px;
+        height: 256px;
+    }
+}
