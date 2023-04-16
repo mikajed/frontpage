@@ -106,11 +106,12 @@ h1 {
     margin: 0 10px 30px 10px;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
     .iconFrame, .iconFrameSmall {
         width: 100%;
         margin: 0 5px 15px 5px;
         flex: 1 1 50%;
+        border: none;
     }
 }
 
@@ -127,9 +128,9 @@ a {
     transform: rotate(15deg);
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
     .icon {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 }
