@@ -109,9 +109,8 @@ h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
     .iconFrame, .iconFrameSmall {
         width: 100%;
-        margin: 0 5px 15px 5px;
-        flex: 1 1 50%;
         border: none;
+        margin: 0;
     }
 }
 
@@ -130,7 +129,7 @@ a {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
     .icon {
-        width: 250px;
-        height: 250px;
+        width: 170px;
+        height: auto;
     }
 }
