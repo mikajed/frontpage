@@ -1,4 +1,5 @@
 Frontpage for the browser
 
 
-![Bildschirmfoto vom 2022-12-18 15-20-26](https://user-images.githubusercontent.com/84669111/208303542-f77916a9-58d6-4e16-89d5-634b03c7158c.png)
+
+![8f75f7d9-56fe-4d8d-b436-921d4946983c](https://user-images.githubusercontent.com/84669111/232334116-6ccbf528-6a20-49f5-a1bf-d455094d1883.png)
