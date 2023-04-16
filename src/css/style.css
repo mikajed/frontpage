@@ -99,7 +99,6 @@ h1 {
     border: 2px solid #8f8f8f;
     padding: 1rem 1rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
     justify-content: space-between;
@@ -130,7 +129,7 @@ a {
 
 @media only screen and (max-width: 480px) {
     .icon {
-        width: 256px;
-        height: 256px;
+        width: 200px;
+        height: 200px;
     }
 }
