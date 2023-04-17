@@ -72,23 +72,11 @@ h1 {
     text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 3rem;
-    }
-}
-
 #date {
     font-size: 3rem;
     margin-bottom: 2rem;
     color: #8f8f8f;
     text-align: center;
-}
-
-@media only screen and (max-width: 480px) {
-    #date {
-        font-size: 1.5rem;
-    }
 }
 
 .iconFrame, .iconFrameSmall {
@@ -106,14 +94,6 @@ h1 {
     margin: 0 10px 30px 10px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
-    .iconFrame, .iconFrameSmall {
-        width: 100%;
-        border: none;
-        margin: 0;
-    }
-}
-
 a {
     color: #8f8f8f;
 }
@@ -128,8 +108,23 @@ a {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+    .iconFrame, .iconFrameSmall {
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }    
     .icon {
         width: 170px;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }    
+    #date {
+        font-size: 1.5rem;
     }
 }
