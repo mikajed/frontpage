@@ -13,7 +13,6 @@ function myTimer() {
 }
 
 // document.getElementById('greeting').innerHTML = new Date().getHours() = 12 ? 'Guten Tag' : 'Guten Morgen';
-
 const jetzt = new Date();
 const stunde = jetzt.getHours();
 
@@ -27,3 +26,8 @@ if (stunde >= 6 && stunde < 12) {
   document.getElementById("greeting").textContent = "Gute Nacht";
 }
 
+// for dark mode
+function myFunction() {
+   const element = document.body;
+   element.classList.toggle("light-mode");
+}

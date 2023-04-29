@@ -1,6 +1,7 @@
-:root {
+/* :root {
     color-scheme: light dark;
-}
+} */
+
 /* ubuntu-mono-regular - latin */
 @font-face {
     font-family: 'Ubuntu Mono';
@@ -29,6 +30,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #1c1b22;
+    color: #8f8f8f;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #8f8f8f;
+}
+
+.toggle {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 main {
