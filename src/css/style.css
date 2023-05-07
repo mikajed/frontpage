@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: 'Ubuntu Mono';
+    font-family: 'Ubuntu Mono', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +37,6 @@ body {
 .light-mode {
     background-color: #fff;
     color: #8f8f8f;
-}
-
-.toggle {
-    color: #8f8f8f;
-    cursor: pointer;
 }
 
 main {
@@ -111,13 +106,56 @@ a {
     color: #8f8f8f;
 }
 
-.icon {
-    transition: 0.3s;
+.toggle {
+    opacity: 0;
+    display: flex;
 }
 
-.icon:hover {
-    color: #e1814e;
-    transform: rotate(15deg);
+.toggle svg {
+    color: red;
+}
+
+.toggle + label {
+    position: relative;
+    padding-left: 5rem;
+}
+
+.toggle + label::before {
+    content: "";
+    background-color: #8f8f8f;
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.2s;
+}
+
+.toggle + label::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    transition: transform 0.2s;
+    background-image: url(../images/moon-filled.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toggle:checked + label::before {
+    background-color: #20b776;
+}
+
+.toggle:checked + label::after {
+    transform: translateX(2rem);
+    background-image: url(../images/sun-filled.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) and (max-width: 640px) {
