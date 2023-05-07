@@ -154,7 +154,7 @@ a {
 }
 
 .toggle:checked + label::before {
-    background-color: #20b776;
+    background-color: #e1814e;
 }
 
 .toggle:checked + label::after {
