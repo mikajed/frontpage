@@ -106,6 +106,15 @@ a {
     color: #8f8f8f;
 }
 
+.icon {
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: #e1814e;
+    transform: rotate(15deg);
+}
+
 .toggle {
     opacity: 0;
     display: flex;
