@@ -1,3 +1,4 @@
+// Uhrzeit
 let span = document.getElementById("date");
 let date = new Date();
 
@@ -12,7 +13,7 @@ function myTimer() {
     span.innerText = date.toLocaleTimeString();
 }
 
-// document.getElementById('greeting').innerHTML = new Date().getHours() = 12 ? 'Guten Tag' : 'Guten Morgen';
+// Begrüßung
 const jetzt = new Date();
 const stunde = jetzt.getHours();
 

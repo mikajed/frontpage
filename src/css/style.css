@@ -43,7 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem auto 5rem auto;
+    margin: 3rem auto;
 }
 
 .search {
