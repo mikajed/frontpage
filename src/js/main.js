@@ -17,7 +17,7 @@ function myTimer() {
 const jetzt = new Date();
 const stunde = jetzt.getHours();
 
-if (stunde >= 6 && stunde < 12) {
+if (stunde >= 5 && stunde < 12) {
   document.getElementById("greeting").textContent = "Guten Morgen";
 } else if (stunde >= 12 && stunde < 18) {
   document.getElementById("greeting").textContent = "Guten Tag";
