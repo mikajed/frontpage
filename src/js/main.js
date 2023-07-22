@@ -28,7 +28,7 @@ if (stunde >= 5 && stunde < 12) {
 }
 
 // for dark mode
-function myFunction() {
+function theme() {
    const element = document.body;
    element.classList.toggle("light-mode");
 }
