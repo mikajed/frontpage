@@ -35,8 +35,7 @@ function theme() {
 
 
 // unsplash api for random backgrounds
-let clientID = 'l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM'
-let endpoint = `https://api.unsplash.com/photos/random/?client_id=${clientID}`;
+let endpoint = 'https://api.unsplash.com/photos/random/?client_id=l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM';
 
 let imageElement = document.querySelector('body');
 let creator = document.querySelector('#creator');
