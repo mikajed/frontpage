@@ -53,6 +53,6 @@ fetch(endpoint)
     creator.innerText = jsonData.user.name;
     creator.setAttribute('href', jsonData.user.portfolio_url);
   })
-  .catch(function(error) {
+  .catch((error) => {
     console.log(`Error: ${error}`);
   });
