@@ -1,22 +1,20 @@
-/* :root {
-    color-scheme: light dark;
-} */
+:root {
+    /* color-scheme: light dark; */
+    --font-color: #dfdfdf;
+}
 
-/* ubuntu-mono-regular - latin */
 @font-face {
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/'); /* IE9 Compat Modes */
+    src: url('../fonts/');
     src: local(''),
-         url('../fonts/ubuntu-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/ubuntu-mono-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/ubuntu-mono-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/ubuntu-mono-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/ubuntu-mono-v15-latin-regular.svg#UbuntuMono') format('svg'); /* Legacy iOS */
-  }
-  
-  
+        url('../fonts/ubuntu-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ubuntu-mono-v15-latin-regular.woff2') format('woff2'),
+        url('../fonts/ubuntu-mono-v15-latin-regular.woff') format('woff'),
+        url('../fonts/ubuntu-mono-v15-latin-regular.ttf') format('truetype'),
+        url('../fonts/ubuntu-mono-v15-latin-regular.svg#UbuntuMono') format('svg');
+}
 
 * {
     box-sizing: border-box;
@@ -31,13 +29,14 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #303030;
-    color: #8f8f8f;
-    /* height: 100svh; */
+    color: var(--font-color);
+    position: relative;
+    height: 100svh;
 }
 
 .light-mode {
     background-color: #eee;
-    color: #8f8f8f;
+    color: var(--font-color);
 }
 
 main {
@@ -51,22 +50,26 @@ main {
     display: flex;
     width: 40%;
     justify-content: center;
-    color: #8f8f8f;
+    color: var(--font-color);
 }
 
 input {
     border-radius: 15px;
     backdrop-filter: blur(15px);
     background: transparent;
-    border: 2px solid #8f8f8f;
+    border: 2px solid var(--font-color);
     padding: 1rem 2rem;
     margin-bottom: 2rem;
-    color: #8f8f8f;
+    color: var(--font-color);
     flex: auto;
 }
 
 input[type="text"] {
-    color:#e1814e;
+    color: #e1814e;
+}
+
+::placeholder {
+    color: var(--font-color);
 }
 
 input:focus {
@@ -77,23 +80,24 @@ h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
     font-family: 'Ubuntu Mono';
-    color: #8f8f8f;
+    color: var(--font-color);
     text-align: center;
 }
 
 #date {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #8f8f8f;
+    color: var(--font-color);
     text-align: center;
 }
 
-.iconFrame, .iconFrameSmall {
+.iconFrame,
+.iconFrameSmall {
     /* box-shadow: 0 18px 150px -40px #000; */
     border-radius: 20px;
     width: auto;
     backdrop-filter: blur(15px);
-    border: 2px solid #8f8f8f;
+    border: 2px solid var(--font-color);
     padding: 1rem 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +108,7 @@ h1 {
 }
 
 a {
-    color: #8f8f8f;
+    color: var(--font-color);
 }
 
 .icon {
@@ -121,13 +125,13 @@ a {
     display: flex;
 }
 
-.toggle + label {
+.toggle+label {
     position: relative;
     padding-left: 5rem;
     cursor: pointer;
 }
 
-.toggle + label::before {
+.toggle+label::before {
     content: "";
     background-color: #8f8f8f;
     width: 4.5rem;
@@ -139,7 +143,7 @@ a {
     transition: background-color 0.2s;
 }
 
-.toggle + label::after {
+.toggle+label::after {
     content: "";
     width: 2rem;
     height: 2rem;
@@ -154,24 +158,34 @@ a {
     background-position: center;
 }
 
-.toggle:checked + label::before {
+.toggle:checked+label::before {
     background-color: #e1814e;
 }
 
-.toggle:checked + label::after {
+.toggle:checked+label::after {
     transform: translateX(2rem);
     background-image: url(../images/sun-filled.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.imageDetails {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1rem;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) and (max-width: 640px) {
-    .iconFrame, .iconFrameSmall {
+
+    .iconFrame,
+    .iconFrameSmall {
         width: 100%;
         border: none;
         margin: 0;
         padding: 0;
-    }    
+    }
+
     .icon {
         width: 160px;
         height: auto;
@@ -181,13 +195,14 @@ a {
 @media only screen and (max-width: 480px) {
     h1 {
         font-size: 3rem;
-    }    
+    }
+
     #date {
         font-size: 1.5rem;
     }
 }
 
-.me{
-    color: #8f8f8f;
+.me {
+    color: var(--font-color);
     text-decoration: none;
 }

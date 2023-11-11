@@ -3,14 +3,14 @@ let span = document.getElementById("date");
 let date = new Date();
 
 if (span.textContent === "") {
-    span.innerText = date.toLocaleTimeString();
+  span.innerText = date.toLocaleTimeString();
 }
 
 setInterval(myTimer, 1000);
 
 function myTimer() {
-    let date = new Date();
-    span.innerText = date.toLocaleTimeString();
+  let date = new Date();
+  span.innerText = date.toLocaleTimeString();
 }
 
 // Begrüßung
@@ -29,6 +29,30 @@ if (stunde >= 5 && stunde < 12) {
 
 // for dark mode
 function theme() {
-   const element = document.body;
-   element.classList.toggle("light-mode");
+  const element = document.body;
+  element.classList.toggle("light-mode");
 }
+
+
+// unsplash api for random backgrounds
+let clientID = 'l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM'
+let endpoint = `https://api.unsplash.com/photos/random/?client_id=${clientID}`;
+
+let imageElement = document.querySelector('body');
+let creator = document.querySelector('#creator');
+
+fetch(endpoint)
+  .then((response) => response.json())
+  .then(function (jsonData) {
+    const imageUrl = jsonData.urls.regular;
+
+    document.body.style.backgroundImage = `url(${imageUrl})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+
+    creator.innerText = jsonData.user.name;
+    creator.setAttribute('href', jsonData.user.portfolio_url);
+  })
+  .catch(function(error) {
+    console.log(`Error: ${error}`);
+  });
