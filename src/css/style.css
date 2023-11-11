@@ -120,7 +120,7 @@ a {
     transform: rotate(15deg);
 }
 
-.toggle {
+/* .toggle {
     opacity: 0;
     display: flex;
 }
@@ -167,7 +167,7 @@ a {
     background-image: url(../images/sun-filled.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .imageDetails {
     position: absolute;
