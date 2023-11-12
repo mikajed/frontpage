@@ -35,7 +35,7 @@ if (stunde >= 5 && stunde < 12) {
 
 
 // unsplash api for random backgrounds
-let endpoint = 'https://api.unsplash.com/photos/random?query=nature&client_id=l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM';
+let endpoint = 'https://api.unsplash.com/photos/random?query=film&client_id=l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM';
 
 
 let imageElement = document.querySelector('body');
