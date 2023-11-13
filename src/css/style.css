@@ -1,6 +1,7 @@
 :root {
     /* color-scheme: light dark; */
-    --font-color: #dfdfdf;
+    --font-color: #dfdfdf; /* #dfdfdf */
+    --blend: luminosity;
 }
 
 @font-face {
@@ -34,10 +35,10 @@ body {
     height: 100svh;
 }
 
-.light-mode {
+/* .light-mode {
     background-color: #eee;
     color: var(--font-color);
-}
+} */
 
 main {
     display: flex;
@@ -50,7 +51,6 @@ main {
     display: flex;
     width: 40%;
     justify-content: center;
-    color: var(--font-color);
 }
 
 input {
@@ -60,7 +60,6 @@ input {
     border: 2px solid var(--font-color);
     padding: 1rem 2rem;
     margin-bottom: 2rem;
-    color: var(--font-color);
     flex: auto;
 }
 
@@ -80,8 +79,8 @@ h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
     font-family: 'Ubuntu Mono';
-    color: var(--font-color);
     text-align: center;
+    mix-blend-mode: var(--blend);
 }
 
 #date {
@@ -89,6 +88,7 @@ h1 {
     margin-bottom: 2rem;
     color: var(--font-color);
     text-align: center;
+    mix-blend-mode: var(--blend);
 }
 
 .iconFrame,
@@ -105,6 +105,7 @@ h1 {
     justify-content: space-between;
     list-style-type: none;
     margin: 0 10px 30px 10px;
+    mix-blend-mode: var(--blend);
 }
 
 a {
@@ -113,6 +114,7 @@ a {
 
 .icon {
     transition: 0.3s;
+    mix-blend-mode: var(--blend);
 }
 
 .icon:hover {
@@ -203,6 +205,6 @@ a {
 }
 
 .me {
-    color: var(--font-color);
     text-decoration: none;
+    mix-blend-mode: var(--blend);
 }
