@@ -1,6 +1,6 @@
 :root {
     /* color-scheme: light dark; */
-    --font-color: #dfdfdf; /* #dfdfdf */
+    --font-color: #dfdfdf;
     --blend: luminosity;
 }
 
@@ -110,6 +110,7 @@ h1 {
 
 a {
     color: var(--font-color);
+    mix-blend-mode: var(--blend);
 }
 
 .icon {
