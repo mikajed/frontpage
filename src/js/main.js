@@ -19,10 +19,13 @@ const stunde = jetzt.getHours();
 
 if (stunde >= 5 && stunde < 12) {
   document.getElementById("greeting").textContent = "Guten Morgen";
+  document.querySelector('.me').style.color = randomColors();
 } else if (stunde >= 12 && stunde < 18) {
   document.getElementById("greeting").textContent = "Guten Tag";
+  document.querySelector('.me').style.color = randomColors();
 } else if (stunde >= 18 && stunde < 22) {
-  document.getElementById("greeting").textContent = "Guten Abend"
+  document.getElementById("greeting").textContent = "Guten Abend";
+  document.querySelector('.me').style.color = randomColors();
 } else {
   document.getElementById("greeting").textContent = "Gute Nacht";
 }
@@ -35,7 +38,7 @@ if (stunde >= 5 && stunde < 12) {
 
 
 // unsplash api for random backgrounds
-let endpoint = 'https://api.unsplash.com/photos/random?query=film&client_id=l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM';
+let endpoint = 'https://api.unsplash.com/photos/random?query=nature&client_id=l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM';
 
 
 let imageElement = document.querySelector('body');
@@ -56,3 +59,14 @@ fetch(endpoint)
   .catch((error) => {
     console.log(`Error: ${error}`);
   });
+
+
+// color changer
+function colorChanger() {
+  document.querySelector('.me').style.color = randomColors();
+  document.querySelector('p').style.color = randomColors();
+}
+
+function randomColors() {
+  return 'hsl(' + (360 * Math.random()) + ',50%,50%)';
+}
