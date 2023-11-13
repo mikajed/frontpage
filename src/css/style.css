@@ -105,7 +105,6 @@ h1 {
     justify-content: space-between;
     list-style-type: none;
     margin: 0 10px 30px 10px;
-    mix-blend-mode: var(--blend);
 }
 
 a {
