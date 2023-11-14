@@ -28,8 +28,8 @@ body {
     justify-content: center;
     align-items: center;
     background: radial-gradient(#3e3e3e, #2e2e2e, #1f1f1f);
+    background-size: cover;
     color: var(--font-color);
-    position: relative;
     height: 100vh;
 }
 
@@ -174,13 +174,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
 } */
-
-.imageDetails {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 1rem;
-}
 
 .randomizer {
     width: 80%;

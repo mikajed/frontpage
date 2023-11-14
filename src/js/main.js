@@ -36,30 +36,23 @@ if (stunde >= 5 && stunde < 12) {
 //   element.classList.toggle("light-mode");
 // }
 
+// random background image
+document.addEventListener('DOMContentLoaded', function () {
+  const body = document.querySelector('body');
+  const imgSrc = [
+    './src/images/randomImages/bg1.png',
+    './src/images/randomImages/bg2.jpg',
+    './src/images/randomImages/bg3.jpg',
+    './src/images/randomImages/bg4.png',
+    './src/images/randomImages/bg5.png',
+    './src/images/randomImages/bg6.jpg',
+    './src/images/randomImages/bg7.jpg',
+  ];
+  
+  const randomImg = Math.floor(Math.random() * imgSrc.length);
 
-// unsplash api for random backgrounds
-let endpoint = 'https://api.unsplash.com/photos/random?query=nature&client_id=l-W17KsekbI-PalepAda3zQuudk40k3KSkEg-WW3SvM';
-
-
-let imageElement = document.querySelector('body');
-let creator = document.querySelector('#creator');
-
-fetch(endpoint)
-  .then((response) => response.json())
-  .then(function (jsonData) {
-    const imageUrl = jsonData.urls.regular;
-
-    document.body.style.backgroundImage = `url(${imageUrl})`;
-    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundPosition = 'center';
-
-    creator.innerText = jsonData.user.name;
-    creator.setAttribute('href', jsonData.user.portfolio_url);
-  })
-  .catch((error) => {
-    console.log(`Error: ${error}`);
-  });
-
+  body.style.backgroundImage = `url('${imgSrc[randomImg]}')`;
+});
 
 // color changer
 function colorChanger() {
