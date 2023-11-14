@@ -40,13 +40,13 @@ if (stunde >= 5 && stunde < 12) {
 document.addEventListener('DOMContentLoaded', function () {
   const body = document.querySelector('body');
   const imgSrc = [
-    './src/images/randomImages/bg1.png',
-    './src/images/randomImages/bg2.jpg',
-    './src/images/randomImages/bg3.jpg',
-    './src/images/randomImages/bg4.png',
-    './src/images/randomImages/bg5.png',
-    './src/images/randomImages/bg6.jpg',
-    './src/images/randomImages/bg7.jpg',
+    './src/images/randomImages/bg1.webp',
+    './src/images/randomImages/bg2.webp',
+    './src/images/randomImages/bg3.webp',
+    './src/images/randomImages/bg4.webp',
+    './src/images/randomImages/bg5.webp',
+    './src/images/randomImages/bg6.webp',
+    './src/images/randomImages/bg7.webp',
   ];
   
   const randomImg = Math.floor(Math.random() * imgSrc.length);
