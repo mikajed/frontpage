@@ -1,6 +1,5 @@
 :root {
-    /* color-scheme: light dark; */
-    --font-color: #dfdfdf;
+    --font-color: #b3b3b3;
     --blend: luminosity;
 }
 
@@ -28,11 +27,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #303030;
+    background: radial-gradient(#3e3e3e, #2e2e2e, #1f1f1f);
+    background-size: cover;
     color: var(--font-color);
-    position: relative;
-    height: 100svh;
+    height: 100vh;
 }
 
 /* .light-mode {
@@ -42,9 +40,19 @@ body {
 
 main {
     display: flex;
+}
+
+.sectionContainer {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem auto;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .search {
@@ -55,7 +63,6 @@ main {
 
 input {
     border-radius: 15px;
-    backdrop-filter: blur(15px);
     background: transparent;
     border: 2px solid var(--font-color);
     padding: 1rem 2rem;
@@ -86,9 +93,7 @@ h1 {
 #date {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: var(--font-color);
     text-align: center;
-    mix-blend-mode: var(--blend);
 }
 
 .iconFrame,
@@ -96,7 +101,6 @@ h1 {
     /* box-shadow: 0 18px 150px -40px #000; */
     border-radius: 20px;
     width: auto;
-    backdrop-filter: blur(15px);
     border: 2px solid var(--font-color);
     padding: 1rem 1rem;
     display: flex;
@@ -171,11 +175,38 @@ a {
     background-position: center;
 } */
 
-.imageDetails {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 1rem;
+.randomizer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.7rem 1.3rem;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: var(--font-color);
+    font-family: 'Ubuntu Mono';
+    font-weight: 700;
+    transition: 0.15s ease-in-out;
+    box-shadow: 0 5px 10px #1f1f1f;
+    font-size: 1rem;
+}
+
+.randomizer:hover {
+    transform: translateY(-3px);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px #1f1f1f;
+}
+
+.randomizer:active {
+    transform: scale(1.03);
+}
+
+#creator {
+    color: var(--font-color);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) and (max-width: 640px) {
