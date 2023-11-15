@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     './src/images/randomImages/bg5.webp',
     './src/images/randomImages/bg6.webp',
     './src/images/randomImages/bg7.webp',
+    './src/images/randomImages/bg7.webp'
   ];
   
   const randomImg = Math.floor(Math.random() * imgSrc.length);
