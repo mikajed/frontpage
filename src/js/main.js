@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const randomImg = Math.floor(Math.random() * imgSrc.length);
 
   body.style.backgroundImage = `url('${imgSrc[randomImg]}')`;
+  body.style.backgroundSize = 'cover';
 });
 
 // color changer
