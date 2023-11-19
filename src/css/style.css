@@ -175,11 +175,10 @@ a {
 } */
 
 .randomizer {
-    width: 80%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: none;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 0.7rem 1.3rem;
     margin: 0 0 20px 0;
@@ -189,7 +188,6 @@ a {
     color: var(--font-color);
     font-family: 'Ubuntu Mono';
     font-weight: 700;
-    transition: 0.15s ease-in-out;
     box-shadow: 0 5px 10px #1f1f1f;
     font-size: 1rem;
 }
@@ -228,7 +226,7 @@ a {
     background-color: transparent;
     color: var(--font-color);
     padding: 1rem 2rem;
-    height: 3.3rem;
+    height: 3.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
