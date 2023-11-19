@@ -84,10 +84,10 @@ input:focus {
 
 h1 {
     font-size: 5rem;
-    margin-bottom: 1rem;
     font-family: 'Ubuntu Mono';
     text-align: center;
     mix-blend-mode: var(--blend);
+    margin-bottom: 1.5rem;
 }
 
 #date {
@@ -209,8 +209,96 @@ a {
     color: var(--font-color);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) and (max-width: 640px) {
+/* -- WETTER SECTION -- */
+.card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.card .search {
+    width: 80%;
+    column-gap: 1rem;
+}
+
+.card .search button {
+    border-radius: 15px;
+    border: 2px solid var(--font-color);
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--font-color);
+    padding: 1rem 2rem;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .search svg {
+    width: 24px;
+    height: auto;
+}
+
+.weather {
+    width: 100%;
+    text-align: center;
+}
+
+.weather-icon {
+    width: 50%;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col img {
+    width: 2.5rem;
+    margin-right: 0.6rem;
+}
+
+.humidity,
+.wind {
+    font-size: 1.75rem;
+    margin-top: -0.4rem;
+}
+
+.weather {
+    display: none;
+}
+
+.weather h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.error {
+    text-align: left;
+    margin-left: 0.6rem;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) and (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
     .iconFrame,
     .iconFrameSmall {
         width: 100%;
