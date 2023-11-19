@@ -30,7 +30,7 @@ body {
     background: radial-gradient(#3e3e3e, #2e2e2e, #1f1f1f);
     background-size: cover;
     color: var(--font-color);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* .light-mode {
