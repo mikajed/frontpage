@@ -12,9 +12,9 @@
         <section class="sectionContainer">
             <h1><span id="greeting">Hello</span> <a class="me" href="https://mikajed.dev">Michael</a></h1>
             <span id="date"></span>
-            <form class="search" action="https://www.google.com/search">
+            <!-- <form class="search" action="https://www.google.com/search">
                 <input type="text" name="q" placeholder="Search Google">
-            </form>
+            </form> -->
             <ul class="iconFrame">
                 <li class="icon">
                     <a href="https://drive.google.com/drive/u/0/">
@@ -169,19 +169,49 @@
                     </a>
                 </li>
             </ul>
-            <!-- <input type="checkbox" class="toggle" id="toggle" onclick="theme()">
-        <label for="toggle"></label> -->
     </section>
     <section class="sectionContainer">
-        <h1>Random</h1>
         <button class="randomizer" onclick="colorChanger()">
              Name Color
-             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-360" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M17 15.328c2.414 -.718 4 -1.94 4 -3.328c0 -2.21 -4.03 -4 -9 -4s-9 1.79 -9 4s4.03 4 9 4"></path>
                 <path d="M9 13l3 3l-3 3"></path>
              </svg>
         </button>
+        <h1>Wetter</h1>
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="gib deine stadt ein" spellcheck="false">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                </button>
+            </div>
+            <div class="error">
+                <p>Ungültiger Stadtname</p>
+            </div>
+            <div class="weather">
+                <img class="weather-icon" src="./src/images/rain.png" alt="rain">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Bergheim</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="./src/images/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Feuchtigkeit</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./src/images/wind.png" alt="">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Windgeschwindigkeit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     </main>
 </body>

@@ -2,7 +2,7 @@
 let span = document.getElementById("date");
 let date = new Date();
 
-if (span.textContent === "") {
+if (span && span.textContent === "") {
   span.innerText = date.toLocaleTimeString();
 }
 
@@ -64,3 +64,86 @@ function colorChanger() {
 function randomColors() {
   return 'hsl(' + (360 * Math.random()) + ',50%,50%)';
 }
+
+// wetter
+const apiKey = '45b28340b3d7b6c2b4a9fbfe33508791';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lang=de&q';
+
+const searchBar = document.querySelector('.search input');
+const searchBtn = document.querySelector('.search button');
+const weatherIcon = document.querySelector('.weather-icon');
+const errorDisplay = document.querySelector('.error');
+const weatherDisplay = document.querySelector('.weather');
+const cityDisplay = document.querySelector('.city');
+const tempDisplay = document.querySelector('.temp');
+const humidityDisplay = document.querySelector('.humidity');
+const windDisplay = document.querySelector('.wind');
+
+function displayWeather(data) {
+  console.log(data);
+
+  cityDisplay.innerHTML = data.name;
+  tempDisplay.innerHTML = Math.floor(data.main.temp) + '°C';
+  humidityDisplay.innerHTML = data.main.humidity + '%';
+  windDisplay.innerHTML = data.wind.speed + ' km/h';
+
+  switch (data.weather[0].main) {
+    case 'Clouds':
+      weatherIcon.src = 'src/images/clouds.png';
+      break;
+    case 'Clear':
+      weatherIcon.src = 'src/images/clear.png';
+      break;
+    case 'Rain':
+      weatherIcon.src = 'src/images/rain.png';
+      break;
+    case 'Drizzle':
+      weatherIcon.src = 'src/images/drizzle.png';
+      break;
+    case 'Mist':
+      weatherIcon.src = 'src/images/mist.png';
+      break;
+  }
+
+  weatherDisplay.style.display = 'block';
+  errorDisplay.style.display = 'none';
+}
+
+function handleFetchError() {
+  errorDisplay.style.display = 'block';
+  weatherDisplay.style.display = 'none';
+}
+
+function checkWeather(city) {
+  if (city.trim() === "") {
+    handleFetchError();
+    return;
+  }
+  fetch(`${apiUrl}=${city}&appid=${apiKey}`)
+    .then(response => {
+      if (!response.ok) {
+        handleFetchError();
+      } else {
+        return response.json();
+      }
+    })
+    .then(data => {
+      if (data) {
+        displayWeather(data);
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      handleFetchError();
+    });
+}
+
+searchBar.addEventListener('keyup', event => {
+  if (event.key === 'Enter') {
+    checkWeather(searchBar.value);
+  }
+});
+
+searchBtn.addEventListener('click', () => {
+  checkWeather(searchBar.value);
+});
