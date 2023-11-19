@@ -67,7 +67,7 @@ function randomColors() {
 }
 
 // wetter
-const apiKey = '45b28340b3d7b6c2b4a9fbfe33508791';
+let apiKey = config.MY_KEY;
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lang=de&q';
 
 const searchBar = document.querySelector('.search input');
