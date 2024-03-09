@@ -1,35 +1,36 @@
 :root {
-    --font-color: #b3b3b3;
-    --blend: luminosity;
+  --font-color: #b3b3b3;
+  --blend: luminosity;
 }
 
 @font-face {
-    font-family: 'Ubuntu Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/');
-    src: local(''),
-        url('../fonts/ubuntu-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ubuntu-mono-v15-latin-regular.woff2') format('woff2'),
-        url('../fonts/ubuntu-mono-v15-latin-regular.woff') format('woff'),
-        url('../fonts/ubuntu-mono-v15-latin-regular.ttf') format('truetype'),
-        url('../fonts/ubuntu-mono-v15-latin-regular.svg#UbuntuMono') format('svg');
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/");
+  src: local(""),
+    url("../fonts/ubuntu-mono-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ubuntu-mono-v15-latin-regular.woff2") format("woff2"),
+    url("../fonts/ubuntu-mono-v15-latin-regular.woff") format("woff"),
+    url("../fonts/ubuntu-mono-v15-latin-regular.ttf") format("truetype"),
+    url("../fonts/ubuntu-mono-v15-latin-regular.svg#UbuntuMono") format("svg");
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Ubuntu Mono', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(#3e3e3e, #2e2e2e, #1f1f1f);
-    color: var(--font-color);
-    min-height: 100vh;
+  font-family: "Ubuntu Mono", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#3e3e3e, #2e2e2e, #1f1f1f);
+  color: var(--font-color);
+  min-height: 100vh;
 }
 
 /* .light-mode {
@@ -38,91 +39,93 @@ body {
 } */
 
 main {
-    display: flex;
+  display: flex;
 }
 
 .sectionContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.35);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.35);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .search {
-    display: flex;
-    width: 40%;
-    justify-content: center;
+  display: flex;
+  width: 40%;
+  justify-content: center;
 }
 
 input {
-    border-radius: 15px;
-    background: transparent;
-    border: 2px solid var(--font-color);
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
-    flex: auto;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid var(--font-color);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  flex: auto;
 }
 
 input[type="text"] {
-    color: #e1814e;
+  color: #e1814e;
 }
 
 ::placeholder {
-    color: var(--font-color);
+  color: var(--font-color);
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 h1 {
-    font-size: 5rem;
-    font-family: 'Ubuntu Mono';
-    text-align: center;
-    mix-blend-mode: var(--blend);
-    margin-bottom: 1.5rem;
+  font-size: 5rem;
+  font-family: "Ubuntu Mono";
+  text-align: center;
+  mix-blend-mode: var(--blend);
+  margin-bottom: 1.5rem;
 }
 
 #date {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .iconFrame,
 .iconFrameSmall {
-    /* box-shadow: 0 18px 150px -40px #000; */
-    border-radius: 20px;
-    width: auto;
-    border: 2px solid var(--font-color);
-    padding: 1rem 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0 10px 30px 10px;
+  border-radius: 20px;
+  width: auto;
+  border: 2px solid var(--font-color);
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 10px 30px 10px;
 }
 
 a {
-    color: var(--font-color);
-    mix-blend-mode: var(--blend);
+  color: var(--font-color);
+  mix-blend-mode: var(--blend);
+  text-decoration: none;
 }
 
 .icon {
-    transition: 0.3s;
-    mix-blend-mode: var(--blend);
+  transition: 0.3s;
+  mix-blend-mode: var(--blend);
 }
 
 .icon:hover {
-    color: #e1814e;
-    transform: rotate(15deg);
+  color: #e1814e;
+  transform: rotate(15deg);
 }
 
 /* .toggle {
@@ -175,152 +178,151 @@ a {
 } */
 
 .randomizer {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 0.7rem 1.3rem;
-    margin: 0 0 20px 0;
-    border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    color: var(--font-color);
-    font-family: 'Ubuntu Mono';
-    font-weight: 700;
-    box-shadow: 0 5px 10px #1f1f1f;
-    font-size: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 1.3rem;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: var(--font-color);
+  font-family: "Ubuntu Mono";
+  font-weight: 700;
+  box-shadow: 0 5px 10px #1f1f1f;
+  font-size: 1rem;
 }
 
 .randomizer:hover {
-    transform: translateY(-3px);
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 10px #1f1f1f;
+  transform: translateY(-3px);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px #1f1f1f;
 }
 
 .randomizer:active {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 #creator {
-    color: var(--font-color);
+  color: var(--font-color);
 }
 
 /* -- WETTER SECTION -- */
 .card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card .search {
-    width: 80%;
-    column-gap: 1rem;
+  width: 80%;
+  column-gap: 1rem;
 }
 
 .card .search button {
-    border-radius: 15px;
-    border: 2px solid var(--font-color);
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--font-color);
-    padding: 1rem 2rem;
-    height: 3.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 15px;
+  border: 2px solid var(--font-color);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--font-color);
+  padding: 1rem 2rem;
+  height: 3.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .search svg {
-    width: 24px;
-    height: auto;
+  width: 24px;
+  height: auto;
 }
 
 .weather {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .weather-icon {
-    width: 50%;
+  width: 50%;
 }
 
 .details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.25rem;
-    margin-top: 3rem;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin-top: 3rem;
+  gap: 2rem;
 }
 
 .col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .col img {
-    width: 2.5rem;
-    margin-right: 0.6rem;
+  width: 2.5rem;
+  margin-right: 0.6rem;
 }
 
 .humidity,
 .wind {
-    font-size: 1.75rem;
-    margin-top: -0.4rem;
+  font-size: 1.75rem;
+  margin-top: -0.4rem;
 }
 
 .weather {
-    display: none;
+  display: none;
 }
 
 .weather h2 {
-    font-size: 2.8rem;
-    font-weight: 400;
-    margin-top: 0;
-    text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
 }
 
-
 .error {
-    text-align: left;
-    margin-left: 0.6rem;
-    font-size: 0.8rem;
-    margin-top: 0.6rem;
-    display: none;
+  text-align: left;
+  margin-left: 0.6rem;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  display: none;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) and (max-width: 640px) {
-    main {
-        flex-direction: column;
-    }
-    .iconFrame,
-    .iconFrameSmall {
-        width: 100%;
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
+  main {
+    flex-direction: column;
+  }
+  .iconFrame,
+  .iconFrameSmall {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 
-    .icon {
-        width: 160px;
-        height: auto;
-    }
+  .icon {
+    width: 160px;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 
-    #date {
-        font-size: 1.5rem;
-    }
+  #date {
+    font-size: 1.5rem;
+  }
 }
 
 .me {
-    text-decoration: none;
-    mix-blend-mode: var(--blend);
+  text-decoration: none;
+  mix-blend-mode: var(--blend);
 }
