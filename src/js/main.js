@@ -1,9 +1,23 @@
-function showTime() {
-  let date = document.getElementById("date");
-  date.innerText = new Date().toLocaleTimeString();
+// function showTime() {
+//   let date = document.getElementById("date");
+//   date.innerText = new Date().toLocaleTimeString();
+// }
+
+// setInterval(showTime, 1000);
+// Uhrzeit
+let span = document.getElementById("date");
+let date = new Date();
+
+if (span && span.textContent === "") {
+  span.innerText = date.toLocaleTimeString();
 }
 
-setInterval(showTime, 1000);
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  let date = new Date();
+  span.innerText = date.toLocaleTimeString();
+}
 
 // Begrüßung
 const jetzt = new Date();
