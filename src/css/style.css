@@ -33,11 +33,6 @@ body {
   min-height: 100vh;
 }
 
-/* .light-mode {
-    background-color: #eee;
-    color: var(--font-color);
-} */
-
 main {
   display: flex;
 }
@@ -89,12 +84,19 @@ h1 {
   font-family: "Ubuntu Mono";
   text-align: center;
   mix-blend-mode: var(--blend);
-  margin-bottom: 1.5rem;
 }
 
-#date {
+.dateWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+#date,
+#day {
   font-size: 3rem;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -126,87 +128,6 @@ a {
 .icon:hover {
   color: #e1814e;
   transform: rotate(15deg);
-}
-
-/* .toggle {
-    opacity: 0;
-    display: flex;
-}
-
-.toggle+label {
-    position: relative;
-    padding-left: 5rem;
-    cursor: pointer;
-}
-
-.toggle+label::before {
-    content: "";
-    background-color: #8f8f8f;
-    width: 4.5rem;
-    height: 2.5rem;
-    border-radius: 1.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: background-color 0.2s;
-}
-
-.toggle+label::after {
-    content: "";
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: #fff;
-    position: absolute;
-    top: 0.25rem;
-    left: 0.25rem;
-    transition: transform 0.2s;
-    background-image: url(../images/moon-filled.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.toggle:checked+label::before {
-    background-color: #e1814e;
-}
-
-.toggle:checked+label::after {
-    transform: translateX(2rem);
-    background-image: url(../images/sun-filled.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-.randomizer {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.7rem 1.3rem;
-  margin: 0 0 20px 0;
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  color: var(--font-color);
-  font-family: "Ubuntu Mono";
-  font-weight: 700;
-  box-shadow: 0 5px 10px #1f1f1f;
-  font-size: 1rem;
-}
-
-.randomizer:hover {
-  transform: translateY(-3px);
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 10px #1f1f1f;
-}
-
-.randomizer:active {
-  transform: scale(1.03);
-}
-
-#creator {
-  color: var(--font-color);
 }
 
 /* -- WETTER SECTION -- */

@@ -19,28 +19,33 @@ function myTimer() {
   span.innerText = date.toLocaleTimeString();
 }
 
+const days = [
+  "Sonntag",
+  "Montag",
+  "Dienstag",
+  "Mittwoch",
+  "Donnerstag",
+  "Freitag",
+  "Samstag",
+];
+
+const dayElement = document.getElementById("day");
+const dayOfTheWeek = new Date().getDay();
+dayElement.innerText = days[dayOfTheWeek];
+
 // Begrüßung
 const jetzt = new Date();
 const stunde = jetzt.getHours();
 
 if (stunde >= 5 && stunde < 12) {
   document.getElementById("greeting").textContent = "Guten Morgen";
-  document.querySelector(".me").style.color = randomColors();
 } else if (stunde >= 12 && stunde < 18) {
   document.getElementById("greeting").textContent = "Guten Tag";
-  document.querySelector(".me").style.color = randomColors();
 } else if (stunde >= 18 && stunde < 22) {
   document.getElementById("greeting").textContent = "Guten Abend";
-  document.querySelector(".me").style.color = randomColors();
 } else {
   document.getElementById("greeting").textContent = "Gute Nacht";
 }
-
-// for dark mode
-// function theme() {
-//   const element = document.body;
-//   element.classList.toggle("light-mode");
-// }
 
 // random background image
 document.addEventListener("DOMContentLoaded", function () {
@@ -65,10 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // color changer
-function colorChanger() {
-  document.querySelector(".me").style.color = randomColors();
-  document.querySelector("p").style.color = randomColors();
-}
+document.querySelector(".me").style.color = randomColors();
 
 function randomColors() {
   return "hsl(" + 360 * Math.random() + ",50%,50%)";
@@ -90,12 +92,10 @@ const humidityDisplay = document.querySelector(".humidity");
 const windDisplay = document.querySelector(".wind");
 
 function displayWeather(data) {
-  console.log(data);
-
-  cityDisplay.innerHTML = data.name;
-  tempDisplay.innerHTML = Math.floor(data.main.temp) + "°C";
-  humidityDisplay.innerHTML = data.main.humidity + "%";
-  windDisplay.innerHTML = data.wind.speed + " km/h";
+  cityDisplay.innerText = data.name;
+  tempDisplay.innerText = Math.floor(data.main.temp) + "°C";
+  humidityDisplay.innerText = data.main.humidity + "%";
+  windDisplay.innerText = data.wind.speed + " km/h";
 
   switch (data.weather[0].main) {
     case "Clouds":
